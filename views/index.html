@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="Bluemix, Watson, Cloud Foundry">
+		<meta name="description" content="Bluemix Lab">
+		
+		<title>What's My Personality?</title>
+		<link rel="stylesheet" href="stylesheets/style.css" />
+	</head>
+
+	<body>
+		<div class='container'>
+			<h2>Ask Watson what your personality is!</h2>
+			<p>Please provide 100 words about yourself</p>
+			<span id="wordCountContainer">word count: <span id="wordCount">0</span></span>
+			<div>
+				<textarea id="bio" placeholder="Who are you?" rows="12" cols="75"></textarea>
+			</div>
+			<button id="submitBio" class='btn'>Ask Watson</button>
+			<img id="loader" src="images/loader.gif"/>
+
+			<div id="tableContainer"> </div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+				integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
+				crossorigin="anonymous"></script>
+		<script src="javascripts/client.js"></script>
+	</body>
+</html>

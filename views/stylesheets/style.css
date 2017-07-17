@@ -1,0 +1,41 @@
+body, html {
+	background-color: #3b4b54;
+	color: white;
+}
+
+#loader{
+	visibility: hidden;
+}
+
+.container{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.traitTable{
+	float: left;
+	margin-left: 35px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.big5{
+	color: #5aaafa;
+}
+
+#tableContainer{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.btn {
+	cursor: pointer;
+	font-family: Arial;
+	color: #ffffff;
+	border-style:none;
+	font-size: 20px;
+	background: #5aaafa;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+}

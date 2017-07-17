@@ -1,0 +1,7 @@
+---
+applications:
+- name: Bluemix-Lab
+  memory: 512M
+  random-route: true
+  services:
+   - MyPersonalityInsights

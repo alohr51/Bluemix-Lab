@@ -30,13 +30,24 @@ $( "#submitBio" ).click(function() {
 	});
 });
 
+$( ".prefill" ).click(function() {
+	var textChoice = $(this).data("name");
+	// textExamples is loaded in index.html
+	$("#bio").val(textExamples[textChoice]);
+	setWordCount();
+});
+
 // let the user know client side if their text does not meet the 100 char requirement
 $("#bio").keyup(function() {
+	setWordCount();
+});
+
+function setWordCount(){
 	var bioText = $("#bio").val();
 	var wordCount = getWordCount(bioText);
 	$("#wordCount").text(wordCount);
-    wordCount >= MIN_WORD_COUNT ? $("#wordCount").css('color', 'green') : $("#wordCount").css('color', 'red');
-});
+	wordCount >= MIN_WORD_COUNT ? $("#wordCount").css('color', 'green') : $("#wordCount").css('color', 'red');
+}
 
 // count the number of spaces there are in the text.
 function getWordCount(text){
@@ -46,9 +57,8 @@ function getWordCount(text){
 	if(replaced.length === 0){
 		return 0;
 	}
-	else{
-		return replaced.split(' ').length;
-	}
+	return replaced.split(' ').length;
+	
 }
 
 function tableWatsonData(personalityData){

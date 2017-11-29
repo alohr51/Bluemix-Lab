@@ -6,19 +6,25 @@
 		<meta name="keywords" content="Bluemix, Watson, Cloud Foundry">
 		<meta name="description" content="Bluemix Lab">
 		
-		<title>What's My Personality?</title>
+		<title>Generate Personality!</title>
 		<link rel="stylesheet" href="stylesheets/style.css" />
 	</head>
 
 	<body>
 		<div class='container'>
-			<h2>Ask Watson what your personality is!</h2>
-			<p>Please provide at least 100 words about yourself</p>
-			<span id="wordCountContainer">word count: <span id="wordCount">0</span></span>
+			<h2>Ask Watson to discover personality from text!</h2>
+			<p>Please provide at least 100 words or prefill from the buttons below</p>
 			<div>
-				<textarea id="bio" placeholder="Who are you?" rows="12" cols="75"></textarea>
+				<button class="prefill btn" data-name="gandhi">Reflections- Gandhi</button>
+				<button class="prefill btn" data-name="mlk">I Have a Dream- Martin Luther King Jr.</button>
 			</div>
-			<button id="submitBio" class='btn'>Ask Watson</button>
+			<div id="wordCountContainer">word count: <span id="wordCount">0</span></div>
+			<div>
+				<textarea id="bio" placeholder="Write here!" rows="15" cols="100"></textarea>
+			</div>
+			<div>
+				<button id="submitBio" class='btn'>Ask Watson</button>
+			</div>
 			<img id="loader" src="images/loader.gif"/>
 
 			<div id="tableContainer"> </div>
@@ -27,6 +33,7 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" 
 				integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
 				crossorigin="anonymous"></script>
+		<script src="textExamples.js"></script>
 		<script src="javascripts/client.js"></script>
 	</body>
 </html>

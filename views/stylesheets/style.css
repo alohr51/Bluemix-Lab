@@ -24,12 +24,17 @@ body, html {
 	color: #5aaafa;
 }
 
+#wordCountContainer{
+	margin-top: 20px;
+}
+
 #tableContainer{
 	width: 100%;
 	margin: 0 auto;
 }
 
 .btn {
+	margin-top: 15px;
 	cursor: pointer;
 	font-family: Arial;
 	color: #ffffff;
